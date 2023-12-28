@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  /* background-color: #282c34; */
 }
 
 .App-logo {
@@ -23,6 +24,48 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+
+
+.smallBox
+{
+padding: 2px;
+width: 100px;
+height:100px;
+margin:1px;
+border-radius: 10px;
+border-color: #DCDCDC;
+border-width: 2px;
+}
+.horizontal-line
+{
+  border-top: 2px solid #000; /* Black color code */
+  margin: 50px 0; 
+ 
+
+  transform-origin: center center;
+}
+
+@media only screen and (max-width: 600px) {
+  .smallBox {
+    width: 40px;
+    height:40px /* Make it full width on small screens */
+  }
+}
+
+/* Media query for tablets */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .smallBox {
+    width: 60px;
+    height:60px; /* Adjust the width for tablets */
+  }
+}
+
+
+
+
+
+
+
 
 .App-link {
   color: #61dafb;
